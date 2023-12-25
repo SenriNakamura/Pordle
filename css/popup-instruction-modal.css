@@ -1,0 +1,112 @@
+.popup{
+    /* follows the user scroll */
+    position: fixed;
+    /* centers the top left corner of contents */
+    top: 50%;
+    left: 50%;
+    /* shifts everything to the center */
+    transform: translate(-50%, -50%) scale(0);
+    border: none;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(16, 7, 71);
+    width: 500px;
+    max-width: 80%;
+}
+
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup_header{
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.popup_header .close_popup{
+    color: rgb(255, 251, 235);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(16, 7, 71);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 10px
+}
+
+.popup_content {
+    background-color: rgb(255, 251, 235);
+    border-radius: 0 0 10px 10px;
+}
+
+.subtitle{
+    padding: 10px 0px 0px 10px;
+    margin: 0;
+    color: rgb(73, 85, 121);
+    font-size: 3vh;
+}
+
+.rules {
+    
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+}
+
+.popup_body{
+    color: white;
+    padding: 0px 0px 10px 10px;
+}
+
+.popup_body .examples{
+    color: rgb(73, 85, 121);
+    font-size: 3vh;
+}
+
+.text-box{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-box .fa-solid{
+    border: 1px solid grey;
+   background-color: rgb(73, 85, 121);
+    display: flex;
+    flex-direction: row;
+    margin: .1px;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 6px;
+}
+
+.bold{
+    color: rgb(73, 85, 121);
+    font-size: 18px;
+}
+
+.exp {
+    color: rgb(73, 85, 121);
+}
+
+#color{
+    color: white;
+    background-color: rgb(16, 7, 71);
+}
+
+#color2{
+    color: white;
+    background-color: rgb(237, 159, 50);
+}
+
+#color3{
+    color: white;
+    background-color: #3a3a3c;
+}

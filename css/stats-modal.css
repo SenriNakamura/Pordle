@@ -1,0 +1,147 @@
+.stats-modal {
+    background-color: rgb(32, 23, 73);
+    border-width: 1px black;
+    /* follows the user scroll */
+    position: fixed;
+    /* centers the top left corner of contents */
+    top: 50%;
+    left: 50%;
+    /* shifts everything to the center */
+    transform: translate(-50%, -50%) scale(0);
+    border: none;
+    border-radius: 10px;
+    z-index: 10;
+    width: 500px;
+    max-width: 80%;
+}
+
+.stats-modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.stats-modal .header {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close_stats-modal {
+    justify-content: end;
+    color: white;
+    background: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 32px;
+    border: none;
+}
+
+.stats-modal .title {
+    justify-content: center;
+    margin-left: 54px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.none {
+    justify-content: flex-start;
+}
+
+.stats_body {
+    background-color: rgb(255, 251, 235);
+    border: none;
+}
+
+.nav-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: rgb(73, 85, 121);
+}
+
+.nav-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+    color: rgb(73, 85, 121);
+}
+
+#play_num {
+    font-size: 30px;
+    justify-content: start;
+    padding-left: 40px; 
+    border: none;
+    margin: none;
+    color: rgb(73, 85, 121);
+}
+
+#win_num {
+    font-size: 30px;
+    border: none;
+    margin: none;
+    color: rgb(73, 85, 121);
+}
+
+#streak_num {
+    font-size: 30px;
+    justify-content: end;
+    padding-right: 40px;
+    border: none;
+    margin: none; 
+    color: rgb(73, 85, 121);
+}
+
+.played {
+    border: none;
+    margin: none;
+    color: rgb(73, 85, 121);
+    margin-left: 16px;
+}
+
+
+.win-percentage {
+    justify-content: center;
+    margin: none;
+    border: none;
+    color: rgb(73, 85, 121);
+}
+
+.streak {
+    border: none;
+    margin: none;
+    color: rgb(73, 85, 121);
+    margin-right: 16px;
+}
+
+.guess-distribution {
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+    color: rgb(73, 85, 121);
+}
+
+.stats-list {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.guess-box {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.stats-box {
+    margin-left: 5px;
+    background-color: rgb(32, 23, 73);
+    width: 20px;
+    padding-left: 5px;
+    color: rgb(255, 251, 235);
+}

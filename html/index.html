@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title class="title">
+            Pordle
+        </title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/pordle-profile-card-modal.css"/>
+        <link rel="stylesheet" href="../css/stats-modal.css" />
+        <link rel="stylesheet" href="../css/popup-instruction-modal.css"/>
+        <link rel="stylesheet" href="../css/teachers-modal.css"/>
+        <link rel="icon" type="image/x-icon" href="../pictures/favicon.png">
+        <script src="https://kit.fontawesome.com/5f5563e1a2.js" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <div class="game-container">
+        <div class="title-container">
+            <div class="title-start">
+                <img src="../pictures/point_grey-cutout.png" width="40" height="40" class="pointGrey">
+            </div>
+            <h1 class="title-game">Pordle</h1>
+            <div class="title-end">
+                <button class="open_popup">
+                    <i class="fa-solid fa-question fa-2x" id="question"></i>
+                </button>
+                <button class="open_stats">
+                    <i class="fa-solid fa-chart-simple fa-2x" id="stats"></i>
+                </button>
+                <button class="open_lists">
+                    <i class="fa-solid fa-book fa-2x" id="books"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="teachers_list">
+            <div class="tea_header">
+                <div class="tea_left">
+                    <img src="../pictures/favicon.png" class="tea_icon">
+                    <div class="tea_divider"></div>
+                    <div class="tea_title">Teachers</div>
+                </div>
+                <button class="close_tea">&times;</button>
+            </div>
+            <div class="tea_body">
+                <ul class="tea_names">
+                    <li><button class = "teaBody" id ="Agius_Lisa">Lisa Agius</button></li>
+                    <li><button class = "teaBody" id ="Jean_Baker">Jean Baker</button></li>
+                    <li><button class = "teaBody" id ="Ian_Baxter">Ian Baxter</button></li>
+                    <li><button class = "teaBody" id ="Mara_Benson">Mara Benson</button></li>
+                    <li><button class = "teaBody" id ="Sonia_Blair">Sonia Blair</button></li>
+                    <li><button class = "teaBody" id ="Pete_Brion">Pete Brion</button></li>
+                    <li><button class = "teaBody" id ="Holly_Broadland">Holly Broadland</button></li>
+                    <li><button class="teaBody" id="Marc_Carmichael">Marc Carmichael</button></li>
+                    <li><button class="teaBody" id="Ed_Cavin">Ed Cavin</button></li>
+                    <li><button class="teaBody" id="Jennie_Chan">Jennie Chan</button></li>
+                    <li><button class="teaBody" id="Kasey_Chittenden">Kasey Chittenden</button></li>
+                    <li><button class="teaBody" id="Chris_Cordoni">Chris Cordoni</button></li>
+                    <li><button class="teaBody" id="Cristina_Correia">Cristina Correia</button></li>
+                    <li><button class="teaBody" id="Catherine_Daniel">Catherine Daniel</button></li>
+                    <li><button class="teaBody" id="Maria_Dimas">Maria Dimas</button></li>
+                    <li><button class="teaBody" id="Polly_Dobie">Polly Dobie</button></li>
+                    <li><button class="teaBody" id="Heather_Dodge">Heather Dodge</button></li>
+                    <li><button class="teaBody" id="Julie_Douglas">Julie Douglas</button></li>
+                    <li><button class="teaBody" id="Pierre_Duey">Pierre Duey</button></li>
+                    <li><button class="teaBody" id="Zsuzsanna_Ehn">Zsuzsanna Ehn</button></li>
+                    <li><button class="teaBody" id="Mike_Ehns">Mike Ehns</button></li>
+                    <li><button class="teaBody" id="Stephen_Fleming">Stephen Fleming</button></li>
+                    <li><button class="teaBody" id="Jason_Foster">Jason Foster</button></li>
+                    <li><button class="teaBody" id="Jon_Foster">Jon Foster</button></li>
+                    <li><button class="teaBody" id="Sandro_Fracca">Sandro Fracca</button></li>
+                    <li><button class="teaBody" id="Mori_Hamilton">Mori Hamilton</button></li>
+                    <li><button class="teaBody" id="Carolyn_Hansen">Carolyn Hansen</button></li>
+                    <li><button class="teaBody" id="Andrew_Humphries">Andrew Humphries</button></li>
+                    <li><button class="teaBody" id="Annabelle_Ip">Annabelle Ip</button></li>
+                    <li><button class="teaBody" id="Gabriel_Jones">Gabriel Jones</button></li>
+                    <li><button class="teaBody" id="Andy_Kefalas">Andy Kefalas</button></li>
+                    <li><button class="teaBody" id="Daniel_Lai">Daniel Lai</button></li>
+                    <li><button class="teaBody" id="Karine_Ling">Karine Ling</button></li>
+                    <li><button class="teaBody" id="Teresa_Lin">Teresa Lin</button></li>
+                    <li><button class="teaBody" id="Michelle_Liu">Michelle Liu</button></li>
+                    <li><button class="teaBody" id="Dean_Long">Dean Long</button></li>
+                    <li><button class="teaBody" id="Serge_Makarenko">Serge Makarenko</button></li>
+                    <li><button class="teaBody" id="Michel_Mey">Michel Mey</button></li>
+                    <li><button class="teaBody" id="Jessie_Miller">Jessie Miller</button></li>
+                    <li><button class="teaBody" id="Sachiko_Noguchi">Sachiko Noguchi</button></li>
+                    <li><button class="teaBody" id="Jonathan_Nussbaum">Jonathan Nussbaum</button></li>
+                    <li><button class="teaBody" id="Sean_OConnor">Sean OConnor</button></li>
+                    <li><button class="teaBody" id="Nick_Petheriotis">Nick Petheriotis</button></li>
+                    <li><button class="teaBody" id="Ginaya_Peters">Ginaya Peters</button></li>
+                    <li><button class="teaBody" id="Jeffrey_Richmond">Jeffrey Richmond</button></li>
+                    <li><button class="teaBody" id="Elizabeth_Rogers">Elizabeth Rogers</button></li>
+                    <li><button class="teaBody" id="Stefan_Schmitt">Stefan Schmitt</button></li>
+                    <li><button class="teaBody" id="Janice_Sim">Janice Sim</button></li>
+                    <li><button class="teaBody" id="Paul_Skarsgard">Paul Skarsgard</button></li>
+                    <li><button class="teaBody" id="Davin_Smith">Davin Smith</button></li>
+                    <li><button class="teaBody" id="Takuya_Umeki">Takuya Umeki</button></li>
+                    <li><button class="teaBody" id="Paula_Violi">Paula Violi</button></li>
+                    <li><button class="teaBody" id="Sally_Wong">Sally Wong</button></li>
+                    <li><button class="teaBody" id="Aaron_Yang">Aaron Yang</button></li>
+                    <li><button class="teaBody" id="Stacey_Yip">Stacey Yip</button></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="popup" id="popup">
+            <div class="popup_header">
+                <div class="title">How To Play</div>
+                <button class="close_popup">&times;</button>
+            </div>
+            <div class="popup_content">
+                <div class="subtitle">Guess the correct teacher's name in 6 tries.</div>
+                <div class="rules">
+                    <ul>
+                        <li>Each guess must be a valid name.</li>
+                        <li>The color of the tiles will change and shows how close your guess was to the name.</li>
+                        <li>The number of the tiles in a row is same as the number of letters in the answer.</li>
+                    </ul>
+                </div>
+                
+                <div class="popup_body">
+                    <div class="examples">Examples</div>
+                    <div class="text-box">
+                        <i class="fa-solid fa-j" id="color"></i>
+                        <i class="fa-solid fa-o"></i>
+                        <i class="fa-solid fa-n"></i>
+                        <i class="fa-solid fa-e"></i>
+                        <i class="fa-solid fa-s"></i>
+                    </div>
+                    <span class="bold" style="font-weight:bold">J</span><span class="exp"> is in the word and in the correct spot.</span>
+                    <div class="text-box">
+                        <i class="fa-solid fa-c"></i>
+                        <i class="fa-solid fa-o"></i>
+                        <i class="fa-solid fa-r" id="color2"></i>
+                        <i class="fa-solid fa-d"></i>
+                        <i class="fa-solid fa-o"></i>
+                        <i class="fa-solid fa-n"></i>
+                        <i class="fa-solid fa-i"></i>
+                    </div>
+                    <span class="bold" style="font-weight:bold">R</span> <span class="exp"> is in the word but in the wrong spot.</span>
+                    <div class="text-box">
+                        <i class="fa-solid fa-e"></i>
+                        <i class="fa-solid fa-h"></i>
+                        <i class="fa-solid fa-n" id="color3"></i>
+                    </div>
+                    <span class="bold" style="font-weight:bold">N</span> <span class="exp"> is not in the word in any spot.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- profile card -->
+        <div class="div-block-3">
+            <div class="div-block-9">
+                    <button class="close_books">&times;</button>
+                    <img src="../pictures/profile_test.png" loading="lazy" width="100" alt="" class="image">
+                <div class="div-block-7">
+                        <div class="div-block-11"></div>
+                    <div class="div-block-10"></div>
+                    <div class="div-block-12">
+                        <div id="heading"></div>
+                        <div id="heading-2"></div>
+                        <div id="email"></div>
+                    <div class="div-block-13"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-block-4">
+                <div class="div-block-19">
+                    <h3 class="sub-heading" id="subject_heading">SUBJECT</h3>
+                    <h3 class="sub-heading" id="fun_heading">FUN FACT</h3>                 
+                    <h3 id="paragraph_heading"></h3>
+                <div class="div-block-5"></div>
+              </div>
+            </div>
+            <div class="div-block-17">
+              <a href="#" class="button">PLAY AGAIN</a>
+            </div>
+        </div> 
+
+        <div class="stats-modal"> 
+                <div class="header">
+                    <div class="none"></div>
+                    <div class="title">Statistics</div>
+                    <button class="close_stats-modal">&times;</button>
+                </div>
+                <div class="stats_body">
+                    <div class="nav-values">
+                    <div id="play_num"></div>
+                    <div id="win_num"></div>
+                    <div id="streak_num"></div>
+                </div>
+                <div class="nav-stats">
+                    <div class="played">Played</div>
+                    <div class="win-percentage">Win %</div>
+                    <div class="streak">Streak</div>
+                </div>
+                <div class="guess-distribution">Guess Distribution</div>
+                <ul class="stats-list">
+                    <div class="guess-box">
+                        <li>1</li>
+                        <li class="stats-box"id="stats-1"></li>
+                    </div>
+                    <div class="guess-box">
+                        <li>2</li>
+                        <li class="stats-box"id="stats-2"></li>
+                    </div>
+                    <div class="guess-box">
+                        <li>3</li>
+                        <li class="stats-box"id="stats-3"></li>
+                    </div>
+                    <div class="guess-box">
+                        <li>4</li>
+                        <li class="stats-box"id="stats-4"></li>
+                    </div>    
+                    <div class="guess-box">
+                        <li>5</li>
+                        <li class="stats-box"id="stats-5"></li>
+                    </div>
+                    <div class="guess-box">
+                        <li>6</li>
+                        <li class="stats-box"id="stats-6"></li>
+                    </div>
+                </ul>
+                </div>
+        </div>
+        
+        <div class="tile-container"></div>
+        <div class="key-container">
+            <div class="first-row"></div>
+            <div class="second-row"></div>
+            <div class="third-row"></div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <body>
+        <script src="../javascript/app.js"></script>
+    </body>
+</html>

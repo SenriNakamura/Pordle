@@ -1,0 +1,85 @@
+.teachers_list {
+    position: fixed;
+    top: 7%;
+    right: 0%;
+    width: 320px;
+    background-color: rgb(32, 23, 73);
+    display: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.teachers_list.active {
+    display: block;
+}
+
+.tea_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tea_left {
+    margin-top: 16px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tea_icon {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.tea_divider {
+    margin-right: 8px;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(255, 251, 235);
+}
+
+.tea_title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.close_tea {
+    margin-right: 8px;
+    justify-content: end;
+    border: none;
+    background: none;
+    color: rgb(255, 251, 235);
+    font-size: 40px;
+}
+
+.tea_body {
+    position: static;
+    background-color: rgb(255, 251, 235);
+    width: 320px;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid rgb(16, 7, 71);
+    border-radius: 0 0 10px 10px;
+}
+
+.teaBody{
+    color: rgb(73, 85, 121);
+    margin-top: 8px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    background: none;
+}
+
+.tea_names {
+    color: rgb(73, 85, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
